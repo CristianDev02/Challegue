@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge 1</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 1</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3997/3997601.png">
 </head>
+
 <body>
-    <div class = "container">
-    <div class= "logo"> 
-        <img class ="logoImg"src="img/logo.png">
-        <h1 class="tittle">Encriptador de mensajes</h1>
+  <div class="container">
+    <div class="logo">
+      <img class="logoImg" src="img/logo.png" alt="logo">
+      <h1 class="tittle">Encriptador de mensajes</h1>
     </div>
 
     <div class="left">
-    <input class="text-input" id="inputTexto" type="text" placeholder="Ingrese el texto aquí">
+      <textarea class="input" id="inputTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
     </div>
+
     <div class="right">
-        <img src="img/Muñeco.png" id="imgDer">
-        <h1 id="texto">Ningun mensaje fue encontrado</h1>
-        <textarea id="texto2" name="name" rows="8" cols="80">Ingrese el texto que desees encriptar o desencriptar.</textarea>
-        <button id="copiar" type="button" name="button" onclick="copy()">Copiar</button>
+      <img src="img/Muñeco.png" id="imgDer" alt="Muñeco">
+      <h1 id="texto">Ningun mensaje fue encontrado</h1>
+      <textarea id="texto2" name="name" rows="8"
+        cols="30">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+      <button id="copiar" type="button" name="button" onclick="copy()">Copiar</button>
     </div>
+
     <div class="left-button">
-        <p>Solo minuculas y sin acentos</p>
+      <img src="img/exclamacion.png" alt="signo de exclamación">
+      <span class="Mys">Solo minuculas y sin acentos</span>
 
-        <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
-        <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/cristian-melendez-98b84b1a3/" target="_blank">
+          <img src="img/linkedin.png" alt="linkedIn">
+        </a>
+        <a href="https://github.com/CristianDev02" target="_blank">
+          <img src="img/github.png" alt="git">
+        </a>
+      </div>
+      <div class="copiar hidden" id="copiara">
+      </div>
+      <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+      <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
 
-        <footer>
+      <footer>
 
-            <p class="pie">Made by: Cristian @2023</p>
+        <p class="pie">Desarrollado por: Cristian Melendez &copy; 2023</p>
 
-        </footer>
+      </footer>
     </div>
-    </div>
+  </div>
 </body>
+
 </html>
